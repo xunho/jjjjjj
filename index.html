@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학교 안전 센터</title>
+    <style>
+        /* 기본 스타일 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* 사고 신고 폼 스타일 */
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #444;
+        }
+
+        /* 알림음 스타일 */
+        .alert {
+            color: #ff0000;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>학교 안전 센터</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">소개</a></li>
+                <li><a href="#activities">활동</a></li>
+                <li><a href="#resources">자료</a></li>
+                <li><a href="#contact">연락처</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>소개</h2>
+        <p>학교 안전 허브에 오신 것을 환영합니다! 저희의 목표는 학교 내 잠재적인 위험에 대한 인식을 높이고, 안전한 학습 환경을 만드는 데 도움을 주는 것입니다.</p>
+    </section>
+
+    <section id="activities">
+        <h2>활동</h2>
+        <p>저희 학교에서 진행 중인 활동들을 알아보세요:</p>
+        <ul>
+            <li>정기적인 안전 점검</li>
+            <li>사고 신고 시스템</li>
+            <li>비상 대피 훈련</li>
+        </ul>
+    </section>
+
+    <section id="resources">
+        <h2>자료</h2>
+        <p>학교 안전을 강화하기 위한 다양한 자료들을 살펴보세요:</p>
+        <ul>
+            <li>안전 가이드라인과 프로토콜</li>
+            <li>위험 평가 템플릿</li>
+            <li>교육 자료</li>
+        </ul>
+    </section>
+
+    <section id="report-accident">
+        <h2>사고 신고 시스템</h2>
+        <p>아래 양식을 작성하여 사고를 신고해주세요. 학교 관리자가 신속하게 조치를 취할 것입니다.</p>
+        <form action="submit_report.php" method="post">
+            <label for="incident_type">사고 유형:</label>
+            <select id="incident_type" name="incident_type">
+                <option value="화재">화재</option>
+                <option value="사고">사고</option>
+                <option value="기타">기타</option>
+            </select><br><br>
+            <label for="incident_description">사고 설명:</label><br>
+            <textarea id="incident_description" name="incident_description" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="신고">
+        </form>
+        <p class="alert">사고 발생 시 대응 방법:</p>
+        <ul>
+            <li>화재 발생 시에는 즉시 화재 경보 장치를 작동시키고 주변을 안전하게 떠나세요.</li>
+            <li>사고 발생 시에는 주변을 안전하게 이동하고 관리자나 교사에게 사고를 신고하세요.</li>
+            <li>기타 사고 발생 시 즉시 911 또는 학교의 비상 연락처에 전화하세요.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>연락처</h2>
+        <p>학교 안전에 관련된 궁금한 사항이나 건의사항이
+
+
+
+
+
